@@ -2,13 +2,108 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>flex box</title>
-  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Flex Box</title>
+  <meta name="description" content="pure css width pseudo class :checked and flex">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="build/static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="build/static/css/styles.css">
 </head>
 <body>
-hello
+  <div class="pseudo-slides">
+    <!-- input[type="radio"][name="slider"]#pseudo-slides$*10 -->
+    <input type="radio" name="slider" id="pseudo-slides1" checked autofocus>
+    <input type="radio" name="slider" id="pseudo-slides2">
+    <input type="radio" name="slider" id="pseudo-slides3">
+    <input type="radio" name="slider" id="pseudo-slides4">
+    <input type="radio" name="slider" id="pseudo-slides5">
+    <input type="radio" name="slider" id="pseudo-slides6">
+    <input type="radio" name="slider" id="pseudo-slides7">
+    <input type="radio" name="slider" id="pseudo-slides8">
+    <input type="radio" name="slider" id="pseudo-slides9">
+    <input type="radio" name="slider" id="pseudo-slides10">
+
+    <div class="pseudo-slides-container">
+      <!--
+        (.pseudo-slides-item>.pseudo-slides-item-content>h1{custom title$})*8
+      -->
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>custom title1</h1>
+          <pre class="prettyprint lang-sass">
+$baseFontSize: 16px !default;
+$slidesNum: 10;
+$slidesContainerWidth: $slidesNum * 100%;
+$slidesItemWidth: 1 / $slidesNum * 100%;
+
+@function pxTorem($px) {
+  @return $px / $baseFontSize * 1rem;
+}
+          </pre>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>custom title2</h1>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>custom title3</h1>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>custom title4</h1>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>custom title5</h1>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>custom title6</h1>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>custom title7</h1>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>custom title8</h1>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>custom title9</h1>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>custom title10</h1>
+        </div>
+      </div>
+    </div>
+    <div class="pseudo-slides-ctrl">
+      <!-- label[for="pseudo-slides$"]*10 -->
+      <label for="pseudo-slides1"></label>
+      <label for="pseudo-slides2"></label>
+      <label for="pseudo-slides3"></label>
+      <label for="pseudo-slides4"></label>
+      <label for="pseudo-slides5"></label>
+      <label for="pseudo-slides6"></label>
+      <label for="pseudo-slides7"></label>
+      <label for="pseudo-slides8"></label>
+      <label for="pseudo-slides9"></label>
+      <label for="pseudo-slides10"></label>
+    </div>
+    <div class="pseudo-slides-progress"></div>
+  </div>
+  <!-- // TODO: with grunt copy replace -->
+  <script src="static/js/lib/code_prettify/prettify.js"></script>
+  <script src="build/static/js/speakerDeck.min.js"></script>
 </body>
 </html>
