@@ -7,6 +7,7 @@ css_dir = "build/static/css"
 sass_dir = "static/css/main"
 images_dir = "build/static/img"
 environment = :development
+cache_path = "/tmp/.sass-cache"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

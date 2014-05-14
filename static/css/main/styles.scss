@@ -31,6 +31,13 @@ html,body {
   overflow: hidden;
   counter-reset: slides;
 
+  &::after {
+    content: counter(slides)'/';
+    position: absolute;
+    bottom: pxTorem(24px);
+    right: pxTorem(54px);
+  }
+
   > input[type="radio"] {
     // opacity: 0;
     // position: absolute;
@@ -139,7 +146,7 @@ html,body {
       }
 
       &::after {
-        content: "\2973";
+        content: "\21E6";
         position: absolute;
         top: 50%;
         right: pxTorem(24px);
@@ -176,7 +183,7 @@ html,body {
       text-align: right;
 
       &::after {
-        content: "\2974";
+        content: "\21E8";
       }
     }
     #pseudo-slides#{$i}:checked ~ .pseudo-slides-ctrl label:nth-child(#{$i - 1}) {
