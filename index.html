@@ -11,7 +11,7 @@
 <body>
   <div class="pseudo-slides">
     <input type="checkbox" name="debug" id="pseudo-slides-debug">
-
+    <label for="pseudo-slides-debug">toggle</label>
     <!-- input[type="radio"][name="slider"]#pseudo-slides$*10 -->
     <input type="radio" name="slider" id="pseudo-slides1" checked autofocus>
     <input type="radio" name="slider" id="pseudo-slides2">
@@ -23,6 +23,26 @@
     <input type="radio" name="slider" id="pseudo-slides8">
     <input type="radio" name="slider" id="pseudo-slides9">
     <input type="radio" name="slider" id="pseudo-slides10">
+    <input type="radio" name="slider" id="pseudo-slides11">
+    <input type="radio" name="slider" id="pseudo-slides12">
+    <input type="radio" name="slider" id="pseudo-slides13">
+    <input type="radio" name="slider" id="pseudo-slides14">
+    <input type="radio" name="slider" id="pseudo-slides15">
+    <input type="radio" name="slider" id="pseudo-slides16">
+    <input type="radio" name="slider" id="pseudo-slides17">
+    <input type="radio" name="slider" id="pseudo-slides18">
+    <input type="radio" name="slider" id="pseudo-slides19">
+    <input type="radio" name="slider" id="pseudo-slides20">
+    <input type="radio" name="slider" id="pseudo-slides21">
+    <input type="radio" name="slider" id="pseudo-slides22">
+    <input type="radio" name="slider" id="pseudo-slides23">
+    <input type="radio" name="slider" id="pseudo-slides24">
+    <input type="radio" name="slider" id="pseudo-slides25">
+    <input type="radio" name="slider" id="pseudo-slides26">
+    <input type="radio" name="slider" id="pseudo-slides27">
+    <input type="radio" name="slider" id="pseudo-slides28">
+    <input type="radio" name="slider" id="pseudo-slides29">
+    <input type="radio" name="slider" id="pseudo-slides30">
 
     <div class="pseudo-slides-container">
       <!--
@@ -36,14 +56,139 @@
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>can i use</h1>
+          <h1>介绍</h1>
+          <p>Flexbox(伸缩布局)，诞生于2009，是 CSS3 中一个新的布局模式，是简单、强大的分配空间与对齐内容的工具，是 Web 应用与复杂的页面所需要的。下面将介绍 Flexbox 语法的技术细节。</p>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>Flexbox 好用的点</h1>
+          <ul>
+            <li>如果元素容器没有足够的空间，我们无需计算每个元素的宽度，就可以设置他们在同一行；</li>
+            <li>可以快速让他们布局在一列；</li>
+            <li>可以方便让他们对齐容器的左、右、中间等；</li>
+            <li>无需修改结构就可以改变他们的显示顺序；</li>
+            <li>如果元素容器设置百分比和视窗大小改变，不用提心未指定元素的确切宽度而破坏布局，因为容器中的每个子元素都可以自动分配容器的宽度或高度的比例。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>Flexbox 的前世今生</h1>
+          <ul>
+            <li><a href="#">2009年7月 工作草案 (display: box;)</a></li>
+            <li><a href="#">2011年3月 工作草案 (display: flexbox;)</a></li>
+            <li><a href="#">2011年11月 工作草案 (display: flexbox;)</a></li>
+            <li><a href="#">2012年3月 工作草案 (display: flexbox;)</a></li>
+            <li><a href="#">2012年6月 工作草案 (display: flex;)</a></li>
+            <li><a href="#">2012年9月 候选推荐 (display: flex;)</a></li>
+          </ul>
+          <p class="center">主要经历3个阶段，链接见  Reference</p>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>Flexbox 3个阶段</h1>
+          <pre class="prettyprint linenums">
+// 2009 spec
+display: -webkit-box;
+display: -moz-box;
+display: -o-box;
+
+// 2012
+display: -webkit-flexbox;
+display: -moz-flexbox;
+display: -ms-flexbox;
+display: -o-flexbox;
+
+// new spec
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;
+          </pre>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
           <img src="static/img/caniuse_flex.png" alt="">
         </div>
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>Properties</h1>
+          <h1>Flexbox 的组成</h1>
+          <p>Flexbox 由 伸缩容器 和 伸缩项目 组成，一个设有「display:flex」或「display:inline-flex」的元素是一个伸缩容器，伸缩容器的子元素被称为伸缩项目，创建一个伸缩容器:</p>
+          <pre class="prettyprint linenums lang-sass">
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+}
+          </pre>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
           <img src="static/img/flex_props.png" alt="">
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>术语</h1>
+          <ul>
+            <li>主轴、主轴方向</li>
+            <li>主轴起点、主轴终点</li>
+            <li>主轴长度、主轴长度属性(伸缩项目)</li>
+            <li>侧轴、侧轴方向</li>
+            <li>侧轴起点、侧轴终点</li>
+            <li>侧轴长度、侧轴长度属性</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <img src="static/img/flex_terms.png" alt="">
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>伸缩行方向</h1>
+          <p>默认情况下，伸缩行和文本方向一致：从左至右，从上往下，但是会受到 writing modes 的影响。详情请点击：<a href="http://www.w3.org/TR/css3-writing-modes/">#writing modes spec#</a></p>
+          <ul>
+            <li>direction：ltr | rtl</li>
+            <li>unicode-bidi：normal | embed | bidi-override</li>
+            <li>writing-mode：horizontal-tb | vertical-rl | vertical-lr | lr-tb | tb-rl</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>demo1</h1>
+          <div class="demos demos1">
+            <div class="flex-container">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>custom title3</h1>
         </div>
       </div>
       <div class="pseudo-slides-item">
@@ -63,6 +208,26 @@
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
+          <h1>custom title7</h1>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>custom title8</h1>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>custom title9</h1>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>custom title10</h1>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
           <h1>垂直居中问题</h1>
           <ul>
             <li><a href="#">flex</a></li>
@@ -74,7 +239,7 @@
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
           <h1>垂直居中问题_兼容hack</h1>
-          <pre class="prettyprint lang-sass">
+          <pre class="prettyprint linesnum lang-sass">
 .main {
   display: table;
   height: 100%;
@@ -102,9 +267,11 @@
             <li><a href="http://www.w3.org/TR/2009/WD-css3-flexbox-20090723/">July 2009 Working Draft (box)</a></li>
             <li><a href="http://www.w3.org/TR/2012/WD-css3-flexbox-20120322/">March 2012 Working Draft (flexbox)</a></li>
             <li><a href="http://www.w3.org/TR/2012/CR-css3-flexbox-20120918/">September 2012 Candidate Recommendation (flex)</a></li>
-            <li><a href="http://www.w3.org/TR/css3-flexbox/">the latest spec</a></li>
+            <li><a href="http://www.w3.org/TR/css3-flexbox/">The Latest Spec</a></li>
             <li><a href="https://github.com/doctyper/flexie">2009 Flexbox Spec polyfill IE6-9</a></li>
-            <li><a href="http://www.w3.org/html/ig/zh/wiki/Css3-flexbox/zh-hans">详细讲解</a></li>
+            <li><a href="https://gist.github.com/malei0311/eac6bd7e16af154c106b">自09年至今的写法汇总(Less)</a></li>
+            <li><a href="http://www.w3.org/html/ig/zh/wiki/Css3-flexbox/zh-hans">W3C的中文翻译版本</a></li>
+            <li><a href="http://bennettfeely.com/flexplorer/">Flexbox CSS generator</a></li>
           </ul>
         </div>
       </div>
@@ -133,6 +300,26 @@
       <label for="pseudo-slides8"></label>
       <label for="pseudo-slides9"></label>
       <label for="pseudo-slides10"></label>
+      <label for="pseudo-slides11"></label>
+      <label for="pseudo-slides12"></label>
+      <label for="pseudo-slides13"></label>
+      <label for="pseudo-slides14"></label>
+      <label for="pseudo-slides15"></label>
+      <label for="pseudo-slides16"></label>
+      <label for="pseudo-slides17"></label>
+      <label for="pseudo-slides18"></label>
+      <label for="pseudo-slides19"></label>
+      <label for="pseudo-slides20"></label>
+      <label for="pseudo-slides21"></label>
+      <label for="pseudo-slides22"></label>
+      <label for="pseudo-slides23"></label>
+      <label for="pseudo-slides24"></label>
+      <label for="pseudo-slides25"></label>
+      <label for="pseudo-slides26"></label>
+      <label for="pseudo-slides27"></label>
+      <label for="pseudo-slides28"></label>
+      <label for="pseudo-slides29"></label>
+      <label for="pseudo-slides30"></label>
     </div>
     <div class="pseudo-slides-progress"></div>
   </div>

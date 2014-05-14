@@ -1,10 +1,11 @@
 @import "../src/normalize";
 @import "../src/fonts";
 @import "../src/prettify_desert";
+@import "../src/demos";
 @import "compass/css3";
 
 $baseFontSize: 16px !default;
-$slidesNum: 10;
+$slidesNum: 30;
 $slidesContainerWidth: $slidesNum * 100%;
 $slidesItemWidth: 1 / $slidesNum * 100%;
 
@@ -56,11 +57,36 @@ html,body {
     }
   }
 
-  #pseudo-slides-debug {
+  label[for="pseudo-slides-debug"] {
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 10;
+    width: pxTorem(124px);
+    height: pxTorem(28px);
+    font-size: pxTorem(14px);
+    text-transform: capitalize;
+    line-height: pxTorem(28px);
+    color: #fff;
+    background-color: #34495e;
+    cursor: pointer;
+    @include transition(.3s);
+    @include transform(translate(#{pxTorem(32px)}, #{pxTorem(18px)}) rotate(45deg));
+    @include box-shadow(0 0 5px rgba(0,0,0,.5),inset 0 0 2px #fff);
+    @include text-shadow(0px 0px 1px rgba(255,255,255,0.9),2px 2px 5px rgba(0, 0, 0, 0.5));
+
+    &:hover {
+      background-color: #c0392b;
+      @include text-shadow(-1px -1px 2px rgba(0,0,0,.5));
+    }
+  }
+
+  #pseudo-slides-debug {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
 
     &:checked {
       ~ input[type="radio"] {
@@ -80,6 +106,7 @@ html,body {
 
   img {
     max-width: 100%;
+    max-height: 100%;
     @include box-shadow(0 0 0px 4px rgba(0,0,0,.15));
     @include border-radius(1px);
   }
@@ -102,6 +129,16 @@ html,body {
     text-decoration: none;
     &:hover {
       text-decoration: underline;
+    }
+  }
+
+  p {
+    text-align: left;
+    text-indent: pxTorem(60px);
+
+    &.center {
+      text-align: center;
+      text-indent: pxTorem(0px);
     }
   }
 
@@ -153,7 +190,6 @@ html,body {
     max-height: 90%;
     max-width: 80%;
     min-width: 80%;
-    padding: pxTorem(16px);
     text-align: center;
     @include transform(translate3d(-50%, -50%, 0));
     @include box-sizing(border-box);
