@@ -10,6 +10,8 @@
 </head>
 <body>
   <div class="pseudo-slides">
+    <input type="checkbox" name="debug" id="pseudo-slides-debug">
+
     <!-- input[type="radio"][name="slider"]#pseudo-slides$*10 -->
     <input type="radio" name="slider" id="pseudo-slides1" checked autofocus>
     <input type="radio" name="slider" id="pseudo-slides2">
@@ -24,31 +26,24 @@
 
     <div class="pseudo-slides-container">
       <!--
-        (.pseudo-slides-item>.pseudo-slides-item-content>h1{custom title$})*8
+        (.pseudo-slides-item>.pseudo-slides-item-content>h1{custom title$})*10
       -->
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title1</h1>
-          <pre class="prettyprint lang-sass">
-$baseFontSize: 16px !default;
-$slidesNum: 10;
-$slidesContainerWidth: $slidesNum * 100%;
-$slidesItemWidth: 1 / $slidesNum * 100%;
-
-@function pxTorem($px) {
-  @return $px / $baseFontSize * 1rem;
-}
-          </pre>
+          <h1>Flex Box</h1>
+          <h3>malei</h3>
         </div>
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title2</h1>
+          <h1>can i use</h1>
+          <img src="static/img/caniuse_flex.png" alt="">
         </div>
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title3</h1>
+          <h1>Properties</h1>
+          <img src="static/img/flex_props.png" alt="">
         </div>
       </div>
       <div class="pseudo-slides-item">
@@ -68,22 +63,61 @@ $slidesItemWidth: 1 / $slidesNum * 100%;
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title7</h1>
+          <h1>垂直居中问题</h1>
+          <ul>
+            <li><a href="#">flex</a></li>
+            <li><a href="#">兼容hack</a></li>
+            <li><a href="http://blog.segmentfault.com/humphry/1190000000381042">整理：子容器垂直居中于父容器的方案</a></li>
+          </ul>
         </div>
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title8</h1>
+          <h1>垂直居中问题_兼容hack</h1>
+          <pre class="prettyprint lang-sass">
+.main {
+  display: table;
+  height: 100%;
+  *position: relative;
+  *zoom: 1;
+  .hack {
+      display: table-cell;
+      vertical-align: middle;
+      *position: absolute;
+      *top: 50%;
+      *width: 100%;
+      .inner {
+          *position: relative;
+          *top: -50%;
+      }
+  }
+}
+          </pre>
         </div>
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title9</h1>
+          <h1>Reference</h1>
+          <ul>
+            <li><a href="http://www.w3.org/TR/2009/WD-css3-flexbox-20090723/">July 2009 Working Draft (box)</a></li>
+            <li><a href="http://www.w3.org/TR/2012/WD-css3-flexbox-20120322/">March 2012 Working Draft (flexbox)</a></li>
+            <li><a href="http://www.w3.org/TR/2012/CR-css3-flexbox-20120918/">September 2012 Candidate Recommendation (flex)</a></li>
+            <li><a href="http://www.w3.org/TR/css3-flexbox/">the latest spec</a></li>
+            <li><a href="https://github.com/doctyper/flexie">2009 Flexbox Spec polyfill IE6-9</a></li>
+            <li><a href="http://www.w3.org/html/ig/zh/wiki/Css3-flexbox/zh-hans">详细讲解</a></li>
+          </ul>
         </div>
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title10</h1>
+          <h1>Other</h1>
+          <ul>
+            <li><a href="#">除了代码高亮，纯CSS</a></li>
+            <li><a href="#">主要使用伪类 :checked</a></li>
+            <li><a href="#">counter-reset</a></li>
+            <li><a href="#">counter-increment</a></li>
+            <li><a href="#">git commit -i</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -102,7 +136,6 @@ $slidesItemWidth: 1 / $slidesNum * 100%;
     </div>
     <div class="pseudo-slides-progress"></div>
   </div>
-  <!-- // TODO: with grunt copy replace -->
   <script src="static/js/lib/code_prettify/prettify.js"></script>
   <script src="build/static/js/speakerDeck.min.js"></script>
 </body>

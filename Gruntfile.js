@@ -80,20 +80,51 @@ module.exports = function(grunt) {
       }
     },
     copy: {
-      main: {
+      copy_html: {
         src: '*.html',
         dest: 'build/',
         options: {
           process: function (content, srcpath) {
-            return content.replace(/href="build\//g,"href=\"");
+            return content.replace(/href="build\//g,"href=\"")
+                    .replace(/src="build\//g,"src=\"");
           }
         }
+      },
+      copy_js: {
+        files: [
+          {
+            expand: true,
+            cwd: 'static/js/lib/',
+            src: ['**/*'],
+            dest: 'build/static/js/lib/'
+          }
+        ]
+      },
+      copy_fonts: {
+        files: [
+          {
+            expand: true,
+            cwd: 'static/fonts/',
+            src: ['**/*'],
+            dest: 'build/static/fonts/'
+          }
+        ]
+      },
+      copy_img: {
+        files: [
+          {
+            expand: true,
+            cwd: 'static/img/',
+            src: ['**/*'],
+            dest: 'build/static/img/'
+          }
+        ]
       }
     },
     watch: {
       html: {
         files: ['*.html'],
-        tasks: ['copy']
+        tasks: ['copy:copy_html']
       },
       css: {
         files: ['static/css/**/*.scss','config.rb'],
