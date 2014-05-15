@@ -5,7 +5,7 @@
 @import "compass/css3";
 
 $baseFontSize: 16px !default;
-$slidesNum: 30;
+$slidesNum: 40;
 $slidesContainerWidth: $slidesNum * 100%;
 $slidesItemWidth: 1 / $slidesNum * 100%;
 
@@ -37,7 +37,7 @@ html,body {
     content: counter(slidesCounter)'/';
     position: absolute;
     bottom: pxTorem(24px);
-    right: pxTorem(54px);
+    right: pxTorem(58px);
   }
 
   > input[type="radio"] {

@@ -43,6 +43,16 @@
     <input type="radio" name="slider" id="pseudo-slides28">
     <input type="radio" name="slider" id="pseudo-slides29">
     <input type="radio" name="slider" id="pseudo-slides30">
+    <input type="radio" name="slider" id="pseudo-slides31">
+    <input type="radio" name="slider" id="pseudo-slides32">
+    <input type="radio" name="slider" id="pseudo-slides33">
+    <input type="radio" name="slider" id="pseudo-slides34">
+    <input type="radio" name="slider" id="pseudo-slides35">
+    <input type="radio" name="slider" id="pseudo-slides36">
+    <input type="radio" name="slider" id="pseudo-slides37">
+    <input type="radio" name="slider" id="pseudo-slides38">
+    <input type="radio" name="slider" id="pseudo-slides39">
+    <input type="radio" name="slider" id="pseudo-slides40">
 
     <div class="pseudo-slides-container">
       <!--
@@ -163,67 +173,358 @@ display: flex;
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>demo1</h1>
+          <h1>writing modes</h1>
+          <p>伸缩项目的初始值：flex: 0 1 auto;</p>
           <div class="demos demos1">
             <div class="flex-container">
-              <div class="flex-item">1</div>
-              <div class="flex-item">2</div>
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
             </div>
             <div class="flex-container">
-              <div class="flex-item">1</div>
-              <div class="flex-item">2</div>
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
             </div>
             <div class="flex-container">
-              <div class="flex-item">1</div>
-              <div class="flex-item">2</div>
-              <div class="flex-item">3</div>
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX东方</div>
             </div>
             <div class="flex-container">
-              <div class="flex-item">1</div>
-              <div class="flex-item">2</div>
-              <div class="flex-item">3</div>
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX汉字</div>
             </div>
           </div>
         </div>
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title3</h1>
+          <h1>伸缩流的方向</h1>
+          <p>flex-direction 允许你更改伸缩容器的主轴方向。flex-direction 的默认值是 row。该值表示伸缩项目根据书写模式的方向布局。</p>
+          <ul>
+            <li>row-reverse: 主轴起点和主轴终点交换。如果书写模式是从左至右，伸缩项目则是从右往左显示。</li>
+            <li>column: 主轴和侧轴交换。如果书写系统是垂直的，那么伸缩项目也是垂直显示的。</li>
+            <li>column-reverse: 和 column 一样，但是方向相反。</li>
+          </ul>
         </div>
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title4</h1>
+          <h1>flex-direction</h1>
+          <div class="demos demos2">
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX东方</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX汉字</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title5</h1>
+          <h1>mix</h1>
+          <p>当 writing-mode 和 flex-direction 混合存在时</p>
+          <div class="demos demos3">
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX东方</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX汉字</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title6</h1>
+          <h1>内容溢出？</h1>
+          <ul>
+            <li>因为伸缩项目的初始值：flex: 0 1 auto;</li>
+            <li>依次代表 扩展比率、收缩比率、伸缩基准值</li>
+            <li>扩展比率为 0，是不可扩展的，这就需要设置 伸缩性(flex)</li>
+            <li>伸缩项目的默认尺寸？</li>
+          </ul>
         </div>
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title7</h1>
+          <h1>伸缩项目</h1>
+          <p>一个伸缩项目是一个伸缩容器的子元素。伸缩容器中的文本也被视为一个伸缩项目。</p>
+          <p>伸缩项目中内容与普通流一样。</p>
+          <p>伸缩项目都有一个 主轴长度(Main Size) 和一个 侧轴长度(Cross Size)。主轴长度是伸缩项目在主轴上的尺寸。侧轴长度是伸缩项目在侧轴上的尺寸。或者说，一个伸缩项目的宽或高取决于伸缩容器的轴，可能就是它的主轴长度或侧轴长度。</p>
         </div>
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title8</h1>
+          <pre class="prettyprint linenums lang-html">
+&lt;div class="flex-container"&gt;
+  &lt;!-- 伸缩项目：块级子元素 --&gt;
+  &lt;div class="item1"&gt;块级&lt;/div&gt;
+  &lt;!-- 伸缩项目：浮动元素 ― 用户代理会忽略浮动 --&gt;
+  &lt;div class="item2" style="float: left;"&gt;浮动&lt;/div&gt;
+  &lt;!-- 伸缩项目：包着行内内容的匿名块盒 --&gt;
+  匿名
+  &lt;!-- 伸缩项目：行内子元素 --&gt;
+  &lt;span class="item4"&gt;行内&lt;/span&gt;
+&lt;/div&gt;
+          </pre>
         </div>
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title9</h1>
+          <h1>demo</h1>
+          <div class="demos demos4">
+            <div class="flex-container">
+              <!-- 伸缩项目：块级子元素 -->
+              <div class="item item1">块级</div>
+              <!-- 伸缩项目：浮动元素 ― 用户代理会忽略浮动 -->
+              <div class="item item2" style="float: left;">浮动</div>
+              <!-- 伸缩项目：包着行内内容的匿名块盒 -->
+              匿名
+              <!-- 伸缩项目：行内子元素 -->
+              <span class="item item4">行内</span>
+            </div>
+          </div>
+          <p>下面 看 伸缩项目的 伸缩性 flex</p>
         </div>
       </div>
       <div class="pseudo-slides-item">
         <div class="pseudo-slides-item-content">
-          <h1>custom title10</h1>
+          <h1>伸缩性 flex</h1>
+          <p>伸缩布局决定性的特性是让伸缩项目「可伸缩」，也就是让伸缩项目的宽度或高度自动填充剩余的空间。这可以以「flex」属性完成。一个伸缩容器会等比地按照各伸缩项目的扩展比率分配剩余空间，也会按照收缩比率缩小各项目以避免溢出。</p>
+          <p>取值：  none | flex-grow flex-shrink flex-basis 依次代表 扩展比率、收缩比率、伸缩基准值</p>
+          <p>其中 flex:none; 等同于 flex: 0 0 auto;</p>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>flex 常见值</h1>
+          <ul>
+            <li>flex: 0 auto 或者 flex: initial -> flex: 0 1 auto </li>
+            <li>flex: auto -> flex: 1 1 auto <p>如果所有项目均为「flex: auto」、「flex: initial」或「flex: none」，则在项目尺寸决定后，剩余的正空间会被平分给是「flex: auto」的项目</p></li>
+            <li>flex: num -> flex: num 1 0px; <p>说明见下一页</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <p>该值使元素可伸缩，并将伸缩基准值设置为零，导致该项目会根据设置的比率占用伸缩容器的剩余空间。如果一个伸缩容器里的所有项目都使用此模式，则它们的尺寸会正比于指定的伸缩比率。
+默认状态下，伸缩项目不会收缩至比其最小内容尺寸（最长的英文词或是固定尺寸元素的长度）更小。网页作者可以靠设置「min-width」或「min-height」属性来改变这个默认状态</p>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>伸缩项目的默认尺寸</h1>
+          <ul>
+            <li>没有指定就是 min-content</li>
+            <li>指定就是相应 width</li>
+            <li>以上可扩展、可收缩</li>
+            <li>min-width max-width</li>
+            <li>前面一条可以相对的控制缩放</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>flex:auto;width比例</h1>
+          <div class="demos demos5">
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>伸缩基准值</h1>
+          <div class="demos demos6">
+            <h2>绝对伸缩</h2>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX</div>
+              <div class="flex-item">4XX</div>
+            </div>
+            <h2>相对伸缩</h2>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX</div>
+              <div class="flex-item">4XX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>对齐、换行、显示顺序</h1>
+          <ul>
+            <li>伸缩行换行 flex-wrap (flex-flow)</li>
+            <li>主轴对齐 justify-content</li>
+            <li>侧轴对齐 align-items align-self</li>
+            <li>显示顺序 order</li>
+            <li>用 auto 外边距对齐</li>
+            <li>堆栈伸缩行 align-content</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>flex-wrap</h1>
+          <p>nowrap (默认) wrap wrap-reverse</p>
+          <div class="demos demos7">
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX</div>
+            </div>
+          </div>
+          <p>flex-flow 是 flex-direction flex-wrap 的缩写</p>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>主轴对齐</h1>
+          <p>justify-content: flex-start | flex-end | center | space-between | space-around</p>
+          <img src="static/img/justify-content.png" alt="">
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>justify-content</h1>
+          <div class="demos demos8">
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>侧轴对齐</h1>
+          <p>align-items align-self</p>
+          <p>flex-start | flex-end | center | baseline | stretch 其中 align-self 多一个 auto</p>
+          <img src="static/img/align-items.png" alt="">
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>align-items align-self</h1>
+          <div class="demos demos9">
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX</div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>堆栈伸缩行</h1>
+          <p>align-content: flex-start | flex-end | center | space-between | space-around | stretch</p>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <img src="static/img/align_content.png" alt="">
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>用 auto 外边距对齐</h1>
+          <p>一个 "auto" 的 margin 会合并剩余的空间。它可以用来把伸缩项目挤到其他位置。</p>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <h1>margin-right: auto</h1>
+          <p>这里我们在第一个伸缩项目上声明了 margin-right: auto;，导致了所有的剩余空间被合并到那个元素的右边去了</p>
+          <div class="demos demos10">
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+              <div class="flex-item">2XX</div>
+              <div class="flex-item">3XX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pseudo-slides-item">
+        <div class="pseudo-slides-item-content">
+          <div class="demos demos11">
+            <div class="flex-container">
+              <div class="flex-item">1XX</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="pseudo-slides-item">
@@ -320,6 +621,16 @@ display: flex;
       <label for="pseudo-slides28"></label>
       <label for="pseudo-slides29"></label>
       <label for="pseudo-slides30"></label>
+      <label for="pseudo-slides31"></label>
+      <label for="pseudo-slides32"></label>
+      <label for="pseudo-slides33"></label>
+      <label for="pseudo-slides34"></label>
+      <label for="pseudo-slides35"></label>
+      <label for="pseudo-slides36"></label>
+      <label for="pseudo-slides37"></label>
+      <label for="pseudo-slides38"></label>
+      <label for="pseudo-slides39"></label>
+      <label for="pseudo-slides40"></label>
     </div>
     <div class="pseudo-slides-progress"></div>
   </div>
