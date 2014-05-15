@@ -1,0 +1,2610 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, ../../../static/css/src/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, ../../../static/css/src/normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../../../static/css/src/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 52, ../../../static/css/src/normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 66, ../../../static/css/src/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 76, ../../../static/css/src/normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 88, ../../../static/css/src/normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 96, ../../../static/css/src/normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 105, ../../../static/css/src/normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 118, ../../../static/css/src/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 127, ../../../static/css/src/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 136, ../../../static/css/src/normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 144, ../../../static/css/src/normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 152, ../../../static/css/src/normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 162, ../../../static/css/src/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 174, ../../../static/css/src/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 183, ../../../static/css/src/normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 191, ../../../static/css/src/normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 199, ../../../static/css/src/normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 208, ../../../static/css/src/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 215, ../../../static/css/src/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 219, ../../../static/css/src/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 231, ../../../static/css/src/normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 239, ../../../static/css/src/normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 251, ../../../static/css/src/normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 263, ../../../static/css/src/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 274, ../../../static/css/src/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 288, ../../../static/css/src/normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 300, ../../../static/css/src/normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 312, ../../../static/css/src/normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 327, ../../../static/css/src/normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 337, ../../../static/css/src/normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 347, ../../../static/css/src/normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 358, ../../../static/css/src/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 371, ../../../static/css/src/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 380, ../../../static/css/src/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 390, ../../../static/css/src/normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 403, ../../../static/css/src/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inconsolata/inconsolata_700-webfont.eot");
+  src: url("../fonts/inconsolata/inconsolata_700-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/inconsolata/inconsolata_700-webfont.woff") format("woff"), url("../fonts/inconsolata/inconsolata_700-webfont.ttf") format("truetype"), url("../fonts/inconsolata/inconsolata_700-webfont.svg#inconsolatabold") format("svg");
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inconsolata/inconsolata_regular-webfont.eot");
+  src: url("../fonts/inconsolata/inconsolata_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/inconsolata/inconsolata_regular-webfont.woff") format("woff"), url("../fonts/inconsolata/inconsolata_regular-webfont.ttf") format("truetype"), url("../fonts/inconsolata/inconsolata_regular-webfont.svg#inconsolataregular") format("svg");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/lato_regular-webfont.eot");
+  src: url("../fonts/lato/lato_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato_regular-webfont.woff") format("woff"), url("../fonts/lato/lato_regular-webfont.ttf") format("truetype"), url("../fonts/lato/lato_regular-webfont.svg#latoregular") format("svg");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lato/lato_700-webfont.eot");
+  src: url("../fonts/lato/lato_700-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato_700-webfont.woff") format("woff"), url("../fonts/lato/lato_700-webfont.ttf") format("truetype"), url("../fonts/lato/lato_700-webfont.svg#latobold") format("svg");
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/robotoslab/roboto_slab_regular-webfont.eot");
+  src: url("../fonts/robotoslab/roboto_slab_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab/roboto_slab_regular-webfont.woff") format("woff"), url("../fonts/robotoslab/roboto_slab_regular-webfont.ttf") format("truetype"), url("../fonts/robotoslab/roboto_slab_regular-webfont.svg#roboto_slabregular") format("svg");
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/robotoslab/roboto_slab_700-webfont.eot");
+  src: url("../fonts/robotoslab/roboto_slab_700-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab/roboto_slab_700-webfont.woff") format("woff"), url("../fonts/robotoslab/roboto_slab_700-webfont.ttf") format("truetype"), url("../fonts/robotoslab/roboto_slab_700-webfont.svg#roboto_slabbold") format("svg");
+}
+
+/* desert scheme ported from vim to google prettify */
+/* line 3, ../../../static/css/src/prettify_desert.scss */
+pre.prettyprint {
+  display: block;
+  background-color: #333;
+  margin: 0;
+  overflow: auto;
+}
+
+/* line 9, ../../../static/css/src/prettify_desert.scss */
+pre .nocode {
+  background-color: none;
+  color: black;
+}
+
+/* line 13, ../../../static/css/src/prettify_desert.scss */
+pre .str {
+  color: #ffa0a0;
+}
+
+/* string  - pink */
+/* line 18, ../../../static/css/src/prettify_desert.scss */
+pre .kwd {
+  color: #f0e68c;
+  font-weight: bold;
+}
+
+/* line 22, ../../../static/css/src/prettify_desert.scss */
+pre .com {
+  color: skyblue;
+}
+
+/* comment - skyblue */
+/* line 27, ../../../static/css/src/prettify_desert.scss */
+pre .typ {
+  color: palegreen;
+}
+
+/* type    - lightgreen */
+/* line 32, ../../../static/css/src/prettify_desert.scss */
+pre .lit {
+  color: indianred;
+}
+
+/* literal - darkred */
+/* line 37, ../../../static/css/src/prettify_desert.scss */
+pre .pun {
+  color: white;
+}
+
+/* punctuation */
+/* line 42, ../../../static/css/src/prettify_desert.scss */
+pre .pln {
+  color: white;
+}
+
+/* plaintext */
+/* line 47, ../../../static/css/src/prettify_desert.scss */
+pre .tag {
+  color: #f0e68c;
+  font-weight: bold;
+}
+
+/* html/xml tag    - lightyellow */
+/* line 53, ../../../static/css/src/prettify_desert.scss */
+pre .atn {
+  color: #bdb76b;
+  font-weight: bold;
+}
+
+/* attribute name  - khaki */
+/* line 59, ../../../static/css/src/prettify_desert.scss */
+pre .atv {
+  color: #ffa0a0;
+}
+
+/* attribute value - pink */
+/* line 64, ../../../static/css/src/prettify_desert.scss */
+pre .dec {
+  color: palegreen;
+}
+
+/* decimal         - lightgreen */
+/* Specify class=linenums on a pre to get line numbering */
+/* line 70, ../../../static/css/src/prettify_desert.scss */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  color: #aeaeae;
+}
+
+/* IE indents via margin-left */
+/* line 78, ../../../static/css/src/prettify_desert.scss */
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8 {
+  list-style-type: none;
+  white-space: nowrap;
+}
+
+/* Alternate shading for lines */
+@media print {
+  /* line 87, ../../../static/css/src/prettify_desert.scss */
+  pre.prettyprint {
+    background-color: none;
+  }
+
+  /* line 90, ../../../static/css/src/prettify_desert.scss */
+  pre .str, code .str {
+    color: #006600;
+  }
+
+  /* line 93, ../../../static/css/src/prettify_desert.scss */
+  pre .kwd, code .kwd {
+    color: #006;
+    font-weight: bold;
+  }
+
+  /* line 97, ../../../static/css/src/prettify_desert.scss */
+  pre .com, code .com {
+    color: #600;
+    font-style: italic;
+  }
+
+  /* line 101, ../../../static/css/src/prettify_desert.scss */
+  pre .typ, code .typ {
+    color: #404;
+    font-weight: bold;
+  }
+
+  /* line 105, ../../../static/css/src/prettify_desert.scss */
+  pre .lit, code .lit {
+    color: #004444;
+  }
+
+  /* line 108, ../../../static/css/src/prettify_desert.scss */
+  pre .pun, code .pun {
+    color: #444400;
+  }
+
+  /* line 111, ../../../static/css/src/prettify_desert.scss */
+  pre .pln, code .pln {
+    color: black;
+  }
+
+  /* line 114, ../../../static/css/src/prettify_desert.scss */
+  pre .tag, code .tag {
+    color: #006;
+    font-weight: bold;
+  }
+
+  /* line 118, ../../../static/css/src/prettify_desert.scss */
+  pre .atn, code .atn {
+    color: #440044;
+  }
+
+  /* line 121, ../../../static/css/src/prettify_desert.scss */
+  pre .atv, code .atv {
+    color: #006600;
+  }
+}
+/* line 3, ../../../static/css/src/demos.scss */
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  -webkit-box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+}
+
+/* line 13, ../../../static/css/src/demos.scss */
+.flex-item {
+  background-color: #d35400;
+  width: 100px;
+  height: 100px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+/* line 21, ../../../static/css/src/demos.scss */
+.demos {
+  display: inline-block;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 4px;
+}
+
+/* line 28, ../../../static/css/src/demos.scss */
+.demos1 {
+  width: 800px;
+}
+/* line 31, ../../../static/css/src/demos.scss */
+.demos1 .flex-container {
+  float: left;
+  width: 170px;
+  height: 300px;
+  margin-left: 25px;
+}
+/* line 37, ../../../static/css/src/demos.scss */
+.demos1 .flex-container:nth-child(2) {
+  direction: rtl;
+}
+/* line 41, ../../../static/css/src/demos.scss */
+.demos1 .flex-container:nth-child(3) {
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+/* line 46, ../../../static/css/src/demos.scss */
+.demos1 .flex-container:nth-child(4) {
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+}
+/* line 51, ../../../static/css/src/demos.scss */
+.demos1 .flex-container .flex-item {
+  width: 25px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* line 60, ../../../static/css/src/demos.scss */
+.demos2 {
+  width: 800px;
+}
+/* line 63, ../../../static/css/src/demos.scss */
+.demos2 .flex-container {
+  float: left;
+  width: 170px;
+  height: 300px;
+  margin-left: 25px;
+}
+/* line 69, ../../../static/css/src/demos.scss */
+.demos2 .flex-container:nth-child(2) {
+  flex-direction: row-reverse;
+}
+/* line 73, ../../../static/css/src/demos.scss */
+.demos2 .flex-container:nth-child(3) {
+  flex-direction: column;
+}
+/* line 77, ../../../static/css/src/demos.scss */
+.demos2 .flex-container:nth-child(4) {
+  flex-direction: column-reverse;
+}
+/* line 81, ../../../static/css/src/demos.scss */
+.demos2 .flex-container .flex-item {
+  width: 25px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* line 90, ../../../static/css/src/demos.scss */
+.demos3 {
+  width: 800px;
+}
+/* line 93, ../../../static/css/src/demos.scss */
+.demos3 .flex-container {
+  float: left;
+  width: 170px;
+  height: 300px;
+  margin-left: 25px;
+}
+/* line 99, ../../../static/css/src/demos.scss */
+.demos3 .flex-container:nth-child(1) {
+  flex-direction: row-reverse;
+}
+/* line 103, ../../../static/css/src/demos.scss */
+.demos3 .flex-container:nth-child(2) {
+  direction: rtl;
+}
+/* line 107, ../../../static/css/src/demos.scss */
+.demos3 .flex-container:nth-child(3) {
+  flex-direction: column;
+}
+/* line 111, ../../../static/css/src/demos.scss */
+.demos3 .flex-container:nth-child(4) {
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+}
+/* line 116, ../../../static/css/src/demos.scss */
+.demos3 .flex-container .flex-item {
+  width: 25px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* line 125, ../../../static/css/src/demos.scss */
+.demos4 {
+  width: 800px;
+}
+/* line 128, ../../../static/css/src/demos.scss */
+.demos4 .item {
+  background: #d35400;
+  margin: 10px;
+}
+
+/* line 134, ../../../static/css/src/demos.scss */
+.demos5 {
+  width: 800px;
+}
+/* line 137, ../../../static/css/src/demos.scss */
+.demos5 .flex-container {
+  float: left;
+  width: 170px;
+  height: 300px;
+  margin-left: 25px;
+}
+/* line 144, ../../../static/css/src/demos.scss */
+.demos5 .flex-container:nth-child(1) .flex-item {
+  width: 100px;
+  height: auto;
+}
+/* line 148, ../../../static/css/src/demos.scss */
+.demos5 .flex-container:nth-child(1) .flex-item:nth-child(1) {
+  flex: 1;
+}
+/* line 151, ../../../static/css/src/demos.scss */
+.demos5 .flex-container:nth-child(1) .flex-item:nth-child(2) {
+  flex: 2;
+}
+/* line 158, ../../../static/css/src/demos.scss */
+.demos5 .flex-container:nth-child(2) .flex-item {
+  width: 100px;
+  min-width: 100px;
+  height: auto;
+}
+/* line 163, ../../../static/css/src/demos.scss */
+.demos5 .flex-container:nth-child(2) .flex-item:nth-child(1) {
+  flex: 1;
+}
+/* line 166, ../../../static/css/src/demos.scss */
+.demos5 .flex-container:nth-child(2) .flex-item:nth-child(2) {
+  flex: 2;
+}
+/* line 173, ../../../static/css/src/demos.scss */
+.demos5 .flex-container:nth-child(3) .flex-item {
+  width: 50px;
+  height: auto;
+}
+/* line 177, ../../../static/css/src/demos.scss */
+.demos5 .flex-container:nth-child(3) .flex-item:nth-child(1) {
+  min-width: 50px;
+  flex: 1;
+}
+/* line 181, ../../../static/css/src/demos.scss */
+.demos5 .flex-container:nth-child(3) .flex-item:nth-child(2) {
+  max-width: 50px;
+  flex: 2;
+}
+/* line 189, ../../../static/css/src/demos.scss */
+.demos5 .flex-container:nth-child(4) .flex-item {
+  width: 25px;
+  min-width: 25px;
+  max-width: 25px;
+  height: auto;
+}
+/* line 195, ../../../static/css/src/demos.scss */
+.demos5 .flex-container:nth-child(4) .flex-item:nth-child(1) {
+  flex: 1;
+}
+/* line 198, ../../../static/css/src/demos.scss */
+.demos5 .flex-container:nth-child(4) .flex-item:nth-child(2) {
+  flex: 2;
+}
+/* line 204, ../../../static/css/src/demos.scss */
+.demos5 .flex-container .flex-item {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* line 211, ../../../static/css/src/demos.scss */
+.demos6 {
+  width: 800px;
+}
+/* line 216, ../../../static/css/src/demos.scss */
+.demos6 .flex-container:nth-of-type(1) .flex-item {
+  flex: 1;
+}
+/* line 219, ../../../static/css/src/demos.scss */
+.demos6 .flex-container:nth-of-type(1) .flex-item:nth-child(4) {
+  flex: 2;
+}
+/* line 226, ../../../static/css/src/demos.scss */
+.demos6 .flex-container:nth-of-type(2) .flex-item {
+  flex: auto;
+}
+/* line 229, ../../../static/css/src/demos.scss */
+.demos6 .flex-container:nth-of-type(2) .flex-item:nth-child(4) {
+  flex: 2 1 auto;
+}
+/* line 235, ../../../static/css/src/demos.scss */
+.demos6 .flex-container .flex-item {
+  width: auto;
+}
+
+/* line 241, ../../../static/css/src/demos.scss */
+.demos7 {
+  width: 300px;
+}
+/* line 244, ../../../static/css/src/demos.scss */
+.demos7 .flex-container {
+  flex-wrap: wrap;
+}
+
+/* line 249, ../../../static/css/src/demos.scss */
+.demos8 {
+  width: 800px;
+}
+/* line 252, ../../../static/css/src/demos.scss */
+.demos8 .flex-container {
+  margin-top: 15px;
+}
+/* line 254, ../../../static/css/src/demos.scss */
+.demos8 .flex-container:nth-child(1) {
+  justify-content: flex-end;
+}
+/* line 257, ../../../static/css/src/demos.scss */
+.demos8 .flex-container:nth-child(2) {
+  justify-content: center;
+}
+/* line 260, ../../../static/css/src/demos.scss */
+.demos8 .flex-container:nth-child(3) {
+  justify-content: space-between;
+}
+/* line 263, ../../../static/css/src/demos.scss */
+.demos8 .flex-container:nth-child(4) {
+  justify-content: space-around;
+}
+/* line 267, ../../../static/css/src/demos.scss */
+.demos8 .flex-container .flex-item {
+  height: 50px;
+  width: 60px;
+}
+/* line 270, ../../../static/css/src/demos.scss */
+.demos8 .flex-container .flex-item:nth-child(1) {
+  background: #f1c40f;
+}
+/* line 273, ../../../static/css/src/demos.scss */
+.demos8 .flex-container .flex-item:nth-child(2) {
+  width: 120px;
+  background: #2ecc71;
+}
+/* line 277, ../../../static/css/src/demos.scss */
+.demos8 .flex-container .flex-item:nth-child(3) {
+  width: 180px;
+  background: #9b59b6;
+}
+
+/* line 285, ../../../static/css/src/demos.scss */
+.demos9 {
+  width: 800px;
+}
+/* line 288, ../../../static/css/src/demos.scss */
+.demos9 .flex-container {
+  float: left;
+  width: 270px;
+  height: 150px;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+/* line 295, ../../../static/css/src/demos.scss */
+.demos9 .flex-container:nth-child(1) {
+  align-items: flex-end;
+}
+/* line 298, ../../../static/css/src/demos.scss */
+.demos9 .flex-container:nth-child(2) {
+  align-items: center;
+}
+/* line 301, ../../../static/css/src/demos.scss */
+.demos9 .flex-container:nth-child(3) {
+  align-items: baseline;
+}
+/* line 304, ../../../static/css/src/demos.scss */
+.demos9 .flex-container:nth-child(4) {
+  align-items: stretch;
+}
+/* line 308, ../../../static/css/src/demos.scss */
+.demos9 .flex-container .flex-item {
+  height: 100px;
+  word-break: break-all;
+  width: auto;
+  margin: 0;
+}
+/* line 313, ../../../static/css/src/demos.scss */
+.demos9 .flex-container .flex-item:nth-child(1) {
+  flex: 1;
+  font-size: 12px;
+  line-height: 2;
+  height: 60px;
+  background: #f1c40f;
+}
+/* line 320, ../../../static/css/src/demos.scss */
+.demos9 .flex-container .flex-item:nth-child(2) {
+  flex: 2;
+  font-size: 20px;
+  line-height: 2;
+  background: #2ecc71;
+}
+/* line 326, ../../../static/css/src/demos.scss */
+.demos9 .flex-container .flex-item:nth-child(3) {
+  flex: 3;
+  font-size: 16px;
+  line-height: 2;
+  height: 80px;
+  background: #9b59b6;
+}
+
+/* line 337, ../../../static/css/src/demos.scss */
+.demos10 {
+  width: 800px;
+}
+/* line 339, ../../../static/css/src/demos.scss */
+.demos10 .flex-container {
+  height: 200px;
+}
+/* line 343, ../../../static/css/src/demos.scss */
+.demos10 .flex-container .flex-item:nth-child(1) {
+  margin-right: auto;
+}
+
+/* line 350, ../../../static/css/src/demos.scss */
+.demos11 {
+  width: 800px;
+}
+/* line 352, ../../../static/css/src/demos.scss */
+.demos11 .flex-container {
+  height: 600px;
+}
+/* line 355, ../../../static/css/src/demos.scss */
+.demos11 .flex-container .flex-item {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+/* line 16, ../../../static/css/main/styles.scss */
+html, body {
+  font-size: 16px;
+  font-family: "Lato",Helvetica,Tahoma,'\5fae\8f6f\96c5\9ed1','\5b8b\4f53',Arial,sans-serif;
+  line-height: 1.4;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 26, ../../../static/css/main/styles.scss */
+.pseudo-slides {
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #eee;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  counter-reset: slidesCounter;
+}
+/* line 36, ../../../static/css/main/styles.scss */
+.pseudo-slides::after {
+  content: counter(slidesCounter) "/";
+  position: absolute;
+  bottom: 1.5rem;
+  right: 3.625rem;
+}
+/* line 43, ../../../static/css/main/styles.scss */
+.pseudo-slides > input[type="radio"] {
+  position: relative;
+  z-index: -1;
+  counter-increment: slidesCounterRadio;
+}
+/* line 48, ../../../static/css/main/styles.scss */
+.pseudo-slides > input[type="radio"]::after {
+  content: counter(slidesCounterRadio);
+  position: absolute;
+  font-size: 0.75rem;
+  left: 0;
+  right: 0;
+  top: 13px;
+  text-align: center;
+  color: #fff;
+}
+/* line 60, ../../../static/css/main/styles.scss */
+.pseudo-slides label[for="pseudo-slides-debug"] {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 7.75rem;
+  height: 1.75rem;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  line-height: 1.75rem;
+  color: #fff;
+  background-color: #34495e;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translate(2rem, 1.125rem) rotate(45deg);
+  -moz-transform: translate(2rem, 1.125rem) rotate(45deg);
+  -ms-transform: translate(2rem, 1.125rem) rotate(45deg);
+  -o-transform: translate(2rem, 1.125rem) rotate(45deg);
+  transform: translate(2rem, 1.125rem) rotate(45deg);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), inset 0 0 2px white;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), inset 0 0 2px white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), inset 0 0 2px white;
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.9), 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+/* line 79, ../../../static/css/main/styles.scss */
+.pseudo-slides label[for="pseudo-slides-debug"]:hover {
+  background-color: #c0392b;
+  text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5);
+}
+/* line 85, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides-debug {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+/* line 92, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides-debug:checked ~ input[type="radio"] {
+  z-index: 10;
+}
+/* line 98, ../../../static/css/main/styles.scss */
+.pseudo-slides h1, .pseudo-slides h2, .pseudo-slides h3, .pseudo-slides h4 {
+  margin: 0 0 1.25rem 0;
+  color: #eee;
+  font-family: "Roboto Slab",Helvetica,Tahoma,'\5fae\8f6f\96c5\9ed1','\5b8b\4f53',Arial,sans-serif;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+/* line 107, ../../../static/css/main/styles.scss */
+.pseudo-slides img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+}
+/* line 114, ../../../static/css/main/styles.scss */
+.pseudo-slides pre {
+  text-align: left;
+  font-family: "Inconsolata";
+  -webkit-box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  font-size: 1.25rem;
+  min-width: 50rem;
+  max-width: 100%;
+}
+/* line 127, ../../../static/css/main/styles.scss */
+.pseudo-slides a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 130, ../../../static/css/main/styles.scss */
+.pseudo-slides a:hover {
+  text-decoration: underline;
+}
+/* line 135, ../../../static/css/main/styles.scss */
+.pseudo-slides p {
+  text-align: left;
+  text-indent: 3.75rem;
+}
+/* line 139, ../../../static/css/main/styles.scss */
+.pseudo-slides p.center {
+  text-align: center;
+  text-indent: 0rem;
+}
+/* line 145, ../../../static/css/main/styles.scss */
+.pseudo-slides .pseudo-slides-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: -moz-transform 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: -o-transform 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: transform 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  width: 4000%;
+}
+/* line 156, ../../../static/css/main/styles.scss */
+.pseudo-slides .pseudo-slides-item {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 2.5%;
+  text-align: left;
+  vertical-align: top;
+  background: #2c3e50;
+  counter-increment: slidesCounter;
+}
+/* line 166, ../../../static/css/main/styles.scss */
+.pseudo-slides .pseudo-slides-item:nth-of-type(2n) {
+  background: #16a085;
+}
+/* line 170, ../../../static/css/main/styles.scss */
+.pseudo-slides .pseudo-slides-item:nth-of-type(3n) {
+  background: #2980b9;
+}
+/* line 174, ../../../static/css/main/styles.scss */
+.pseudo-slides .pseudo-slides-item:nth-of-type(4n) {
+  background: #27ae60;
+}
+/* line 178, ../../../static/css/main/styles.scss */
+.pseudo-slides .pseudo-slides-item::after {
+  content: counter(slidesCounter);
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+/* line 186, ../../../static/css/main/styles.scss */
+.pseudo-slides .pseudo-slides-item-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: 90%;
+  max-width: 80%;
+  min-width: 80%;
+  text-align: center;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 197, ../../../static/css/main/styles.scss */
+.pseudo-slides .pseudo-slides-item-content ul {
+  text-align: left;
+  display: inline-block;
+}
+/* line 204, ../../../static/css/main/styles.scss */
+.pseudo-slides .pseudo-slides-ctrl label {
+  width: 10%;
+  font-size: 3.75rem;
+  line-height: 3.125rem;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+  opacity: 0.1;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  vertical-align: middle;
+  z-index: -1;
+}
+/* line 219, ../../../static/css/main/styles.scss */
+.pseudo-slides .pseudo-slides-ctrl label:hover {
+  opacity: 0.9;
+}
+/* line 223, ../../../static/css/main/styles.scss */
+.pseudo-slides .pseudo-slides-ctrl label::after {
+  content: "\21E6";
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  -o-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+/* line 234, ../../../static/css/main/styles.scss */
+.pseudo-slides .pseudo-slides-progress {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding: 0;
+  font-size: 0;
+  height: 0.3125rem;
+  background: #c0392b;
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides1:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(0%, 0, 0);
+  -moz-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides1:checked ~ .pseudo-slides-progress {
+  width: 2.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides1:checked ~ .pseudo-slides-ctrl label:nth-child(2) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides1:checked ~ .pseudo-slides-ctrl label:nth-child(2)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides1:checked ~ .pseudo-slides-ctrl label:nth-child(0) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides1:checked ~ .pseudo-slides-ctrl label:nth-child(0)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides2:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-2.5%, 0, 0);
+  -moz-transform: translate3d(-2.5%, 0, 0);
+  -ms-transform: translate3d(-2.5%, 0, 0);
+  -o-transform: translate3d(-2.5%, 0, 0);
+  transform: translate3d(-2.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides2:checked ~ .pseudo-slides-progress {
+  width: 5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides2:checked ~ .pseudo-slides-ctrl label:nth-child(3) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides2:checked ~ .pseudo-slides-ctrl label:nth-child(3)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides2:checked ~ .pseudo-slides-ctrl label:nth-child(1) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides2:checked ~ .pseudo-slides-ctrl label:nth-child(1)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides3:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-5%, 0, 0);
+  -moz-transform: translate3d(-5%, 0, 0);
+  -ms-transform: translate3d(-5%, 0, 0);
+  -o-transform: translate3d(-5%, 0, 0);
+  transform: translate3d(-5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides3:checked ~ .pseudo-slides-progress {
+  width: 7.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides3:checked ~ .pseudo-slides-ctrl label:nth-child(4) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides3:checked ~ .pseudo-slides-ctrl label:nth-child(4)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides3:checked ~ .pseudo-slides-ctrl label:nth-child(2) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides3:checked ~ .pseudo-slides-ctrl label:nth-child(2)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides4:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-7.5%, 0, 0);
+  -moz-transform: translate3d(-7.5%, 0, 0);
+  -ms-transform: translate3d(-7.5%, 0, 0);
+  -o-transform: translate3d(-7.5%, 0, 0);
+  transform: translate3d(-7.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides4:checked ~ .pseudo-slides-progress {
+  width: 10%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides4:checked ~ .pseudo-slides-ctrl label:nth-child(5) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides4:checked ~ .pseudo-slides-ctrl label:nth-child(5)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides4:checked ~ .pseudo-slides-ctrl label:nth-child(3) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides4:checked ~ .pseudo-slides-ctrl label:nth-child(3)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides5:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-10%, 0, 0);
+  -moz-transform: translate3d(-10%, 0, 0);
+  -ms-transform: translate3d(-10%, 0, 0);
+  -o-transform: translate3d(-10%, 0, 0);
+  transform: translate3d(-10%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides5:checked ~ .pseudo-slides-progress {
+  width: 12.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides5:checked ~ .pseudo-slides-ctrl label:nth-child(6) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides5:checked ~ .pseudo-slides-ctrl label:nth-child(6)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides5:checked ~ .pseudo-slides-ctrl label:nth-child(4) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides5:checked ~ .pseudo-slides-ctrl label:nth-child(4)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides6:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-12.5%, 0, 0);
+  -moz-transform: translate3d(-12.5%, 0, 0);
+  -ms-transform: translate3d(-12.5%, 0, 0);
+  -o-transform: translate3d(-12.5%, 0, 0);
+  transform: translate3d(-12.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides6:checked ~ .pseudo-slides-progress {
+  width: 15%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides6:checked ~ .pseudo-slides-ctrl label:nth-child(7) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides6:checked ~ .pseudo-slides-ctrl label:nth-child(7)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides6:checked ~ .pseudo-slides-ctrl label:nth-child(5) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides6:checked ~ .pseudo-slides-ctrl label:nth-child(5)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides7:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-15%, 0, 0);
+  -moz-transform: translate3d(-15%, 0, 0);
+  -ms-transform: translate3d(-15%, 0, 0);
+  -o-transform: translate3d(-15%, 0, 0);
+  transform: translate3d(-15%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides7:checked ~ .pseudo-slides-progress {
+  width: 17.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides7:checked ~ .pseudo-slides-ctrl label:nth-child(8) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides7:checked ~ .pseudo-slides-ctrl label:nth-child(8)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides7:checked ~ .pseudo-slides-ctrl label:nth-child(6) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides7:checked ~ .pseudo-slides-ctrl label:nth-child(6)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides8:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-17.5%, 0, 0);
+  -moz-transform: translate3d(-17.5%, 0, 0);
+  -ms-transform: translate3d(-17.5%, 0, 0);
+  -o-transform: translate3d(-17.5%, 0, 0);
+  transform: translate3d(-17.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides8:checked ~ .pseudo-slides-progress {
+  width: 20%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides8:checked ~ .pseudo-slides-ctrl label:nth-child(9) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides8:checked ~ .pseudo-slides-ctrl label:nth-child(9)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides8:checked ~ .pseudo-slides-ctrl label:nth-child(7) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides8:checked ~ .pseudo-slides-ctrl label:nth-child(7)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides9:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-20%, 0, 0);
+  -moz-transform: translate3d(-20%, 0, 0);
+  -ms-transform: translate3d(-20%, 0, 0);
+  -o-transform: translate3d(-20%, 0, 0);
+  transform: translate3d(-20%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides9:checked ~ .pseudo-slides-progress {
+  width: 22.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides9:checked ~ .pseudo-slides-ctrl label:nth-child(10) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides9:checked ~ .pseudo-slides-ctrl label:nth-child(10)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides9:checked ~ .pseudo-slides-ctrl label:nth-child(8) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides9:checked ~ .pseudo-slides-ctrl label:nth-child(8)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides10:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-22.5%, 0, 0);
+  -moz-transform: translate3d(-22.5%, 0, 0);
+  -ms-transform: translate3d(-22.5%, 0, 0);
+  -o-transform: translate3d(-22.5%, 0, 0);
+  transform: translate3d(-22.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides10:checked ~ .pseudo-slides-progress {
+  width: 25%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides10:checked ~ .pseudo-slides-ctrl label:nth-child(11) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides10:checked ~ .pseudo-slides-ctrl label:nth-child(11)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides10:checked ~ .pseudo-slides-ctrl label:nth-child(9) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides10:checked ~ .pseudo-slides-ctrl label:nth-child(9)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides11:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-25%, 0, 0);
+  -moz-transform: translate3d(-25%, 0, 0);
+  -ms-transform: translate3d(-25%, 0, 0);
+  -o-transform: translate3d(-25%, 0, 0);
+  transform: translate3d(-25%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides11:checked ~ .pseudo-slides-progress {
+  width: 27.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides11:checked ~ .pseudo-slides-ctrl label:nth-child(12) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides11:checked ~ .pseudo-slides-ctrl label:nth-child(12)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides11:checked ~ .pseudo-slides-ctrl label:nth-child(10) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides11:checked ~ .pseudo-slides-ctrl label:nth-child(10)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides12:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-27.5%, 0, 0);
+  -moz-transform: translate3d(-27.5%, 0, 0);
+  -ms-transform: translate3d(-27.5%, 0, 0);
+  -o-transform: translate3d(-27.5%, 0, 0);
+  transform: translate3d(-27.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides12:checked ~ .pseudo-slides-progress {
+  width: 30%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides12:checked ~ .pseudo-slides-ctrl label:nth-child(13) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides12:checked ~ .pseudo-slides-ctrl label:nth-child(13)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides12:checked ~ .pseudo-slides-ctrl label:nth-child(11) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides12:checked ~ .pseudo-slides-ctrl label:nth-child(11)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides13:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-30%, 0, 0);
+  -moz-transform: translate3d(-30%, 0, 0);
+  -ms-transform: translate3d(-30%, 0, 0);
+  -o-transform: translate3d(-30%, 0, 0);
+  transform: translate3d(-30%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides13:checked ~ .pseudo-slides-progress {
+  width: 32.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides13:checked ~ .pseudo-slides-ctrl label:nth-child(14) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides13:checked ~ .pseudo-slides-ctrl label:nth-child(14)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides13:checked ~ .pseudo-slides-ctrl label:nth-child(12) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides13:checked ~ .pseudo-slides-ctrl label:nth-child(12)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides14:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-32.5%, 0, 0);
+  -moz-transform: translate3d(-32.5%, 0, 0);
+  -ms-transform: translate3d(-32.5%, 0, 0);
+  -o-transform: translate3d(-32.5%, 0, 0);
+  transform: translate3d(-32.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides14:checked ~ .pseudo-slides-progress {
+  width: 35%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides14:checked ~ .pseudo-slides-ctrl label:nth-child(15) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides14:checked ~ .pseudo-slides-ctrl label:nth-child(15)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides14:checked ~ .pseudo-slides-ctrl label:nth-child(13) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides14:checked ~ .pseudo-slides-ctrl label:nth-child(13)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides15:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-35%, 0, 0);
+  -moz-transform: translate3d(-35%, 0, 0);
+  -ms-transform: translate3d(-35%, 0, 0);
+  -o-transform: translate3d(-35%, 0, 0);
+  transform: translate3d(-35%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides15:checked ~ .pseudo-slides-progress {
+  width: 37.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides15:checked ~ .pseudo-slides-ctrl label:nth-child(16) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides15:checked ~ .pseudo-slides-ctrl label:nth-child(16)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides15:checked ~ .pseudo-slides-ctrl label:nth-child(14) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides15:checked ~ .pseudo-slides-ctrl label:nth-child(14)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides16:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-37.5%, 0, 0);
+  -moz-transform: translate3d(-37.5%, 0, 0);
+  -ms-transform: translate3d(-37.5%, 0, 0);
+  -o-transform: translate3d(-37.5%, 0, 0);
+  transform: translate3d(-37.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides16:checked ~ .pseudo-slides-progress {
+  width: 40%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides16:checked ~ .pseudo-slides-ctrl label:nth-child(17) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides16:checked ~ .pseudo-slides-ctrl label:nth-child(17)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides16:checked ~ .pseudo-slides-ctrl label:nth-child(15) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides16:checked ~ .pseudo-slides-ctrl label:nth-child(15)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides17:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-40%, 0, 0);
+  -moz-transform: translate3d(-40%, 0, 0);
+  -ms-transform: translate3d(-40%, 0, 0);
+  -o-transform: translate3d(-40%, 0, 0);
+  transform: translate3d(-40%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides17:checked ~ .pseudo-slides-progress {
+  width: 42.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides17:checked ~ .pseudo-slides-ctrl label:nth-child(18) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides17:checked ~ .pseudo-slides-ctrl label:nth-child(18)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides17:checked ~ .pseudo-slides-ctrl label:nth-child(16) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides17:checked ~ .pseudo-slides-ctrl label:nth-child(16)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides18:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-42.5%, 0, 0);
+  -moz-transform: translate3d(-42.5%, 0, 0);
+  -ms-transform: translate3d(-42.5%, 0, 0);
+  -o-transform: translate3d(-42.5%, 0, 0);
+  transform: translate3d(-42.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides18:checked ~ .pseudo-slides-progress {
+  width: 45%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides18:checked ~ .pseudo-slides-ctrl label:nth-child(19) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides18:checked ~ .pseudo-slides-ctrl label:nth-child(19)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides18:checked ~ .pseudo-slides-ctrl label:nth-child(17) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides18:checked ~ .pseudo-slides-ctrl label:nth-child(17)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides19:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-45%, 0, 0);
+  -moz-transform: translate3d(-45%, 0, 0);
+  -ms-transform: translate3d(-45%, 0, 0);
+  -o-transform: translate3d(-45%, 0, 0);
+  transform: translate3d(-45%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides19:checked ~ .pseudo-slides-progress {
+  width: 47.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides19:checked ~ .pseudo-slides-ctrl label:nth-child(20) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides19:checked ~ .pseudo-slides-ctrl label:nth-child(20)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides19:checked ~ .pseudo-slides-ctrl label:nth-child(18) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides19:checked ~ .pseudo-slides-ctrl label:nth-child(18)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides20:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-47.5%, 0, 0);
+  -moz-transform: translate3d(-47.5%, 0, 0);
+  -ms-transform: translate3d(-47.5%, 0, 0);
+  -o-transform: translate3d(-47.5%, 0, 0);
+  transform: translate3d(-47.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides20:checked ~ .pseudo-slides-progress {
+  width: 50%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides20:checked ~ .pseudo-slides-ctrl label:nth-child(21) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides20:checked ~ .pseudo-slides-ctrl label:nth-child(21)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides20:checked ~ .pseudo-slides-ctrl label:nth-child(19) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides20:checked ~ .pseudo-slides-ctrl label:nth-child(19)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides21:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -o-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides21:checked ~ .pseudo-slides-progress {
+  width: 52.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides21:checked ~ .pseudo-slides-ctrl label:nth-child(22) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides21:checked ~ .pseudo-slides-ctrl label:nth-child(22)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides21:checked ~ .pseudo-slides-ctrl label:nth-child(20) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides21:checked ~ .pseudo-slides-ctrl label:nth-child(20)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides22:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-52.5%, 0, 0);
+  -moz-transform: translate3d(-52.5%, 0, 0);
+  -ms-transform: translate3d(-52.5%, 0, 0);
+  -o-transform: translate3d(-52.5%, 0, 0);
+  transform: translate3d(-52.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides22:checked ~ .pseudo-slides-progress {
+  width: 55%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides22:checked ~ .pseudo-slides-ctrl label:nth-child(23) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides22:checked ~ .pseudo-slides-ctrl label:nth-child(23)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides22:checked ~ .pseudo-slides-ctrl label:nth-child(21) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides22:checked ~ .pseudo-slides-ctrl label:nth-child(21)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides23:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-55%, 0, 0);
+  -moz-transform: translate3d(-55%, 0, 0);
+  -ms-transform: translate3d(-55%, 0, 0);
+  -o-transform: translate3d(-55%, 0, 0);
+  transform: translate3d(-55%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides23:checked ~ .pseudo-slides-progress {
+  width: 57.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides23:checked ~ .pseudo-slides-ctrl label:nth-child(24) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides23:checked ~ .pseudo-slides-ctrl label:nth-child(24)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides23:checked ~ .pseudo-slides-ctrl label:nth-child(22) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides23:checked ~ .pseudo-slides-ctrl label:nth-child(22)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides24:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-57.5%, 0, 0);
+  -moz-transform: translate3d(-57.5%, 0, 0);
+  -ms-transform: translate3d(-57.5%, 0, 0);
+  -o-transform: translate3d(-57.5%, 0, 0);
+  transform: translate3d(-57.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides24:checked ~ .pseudo-slides-progress {
+  width: 60%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides24:checked ~ .pseudo-slides-ctrl label:nth-child(25) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides24:checked ~ .pseudo-slides-ctrl label:nth-child(25)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides24:checked ~ .pseudo-slides-ctrl label:nth-child(23) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides24:checked ~ .pseudo-slides-ctrl label:nth-child(23)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides25:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-60%, 0, 0);
+  -moz-transform: translate3d(-60%, 0, 0);
+  -ms-transform: translate3d(-60%, 0, 0);
+  -o-transform: translate3d(-60%, 0, 0);
+  transform: translate3d(-60%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides25:checked ~ .pseudo-slides-progress {
+  width: 62.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides25:checked ~ .pseudo-slides-ctrl label:nth-child(26) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides25:checked ~ .pseudo-slides-ctrl label:nth-child(26)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides25:checked ~ .pseudo-slides-ctrl label:nth-child(24) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides25:checked ~ .pseudo-slides-ctrl label:nth-child(24)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides26:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-62.5%, 0, 0);
+  -moz-transform: translate3d(-62.5%, 0, 0);
+  -ms-transform: translate3d(-62.5%, 0, 0);
+  -o-transform: translate3d(-62.5%, 0, 0);
+  transform: translate3d(-62.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides26:checked ~ .pseudo-slides-progress {
+  width: 65%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides26:checked ~ .pseudo-slides-ctrl label:nth-child(27) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides26:checked ~ .pseudo-slides-ctrl label:nth-child(27)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides26:checked ~ .pseudo-slides-ctrl label:nth-child(25) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides26:checked ~ .pseudo-slides-ctrl label:nth-child(25)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides27:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-65%, 0, 0);
+  -moz-transform: translate3d(-65%, 0, 0);
+  -ms-transform: translate3d(-65%, 0, 0);
+  -o-transform: translate3d(-65%, 0, 0);
+  transform: translate3d(-65%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides27:checked ~ .pseudo-slides-progress {
+  width: 67.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides27:checked ~ .pseudo-slides-ctrl label:nth-child(28) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides27:checked ~ .pseudo-slides-ctrl label:nth-child(28)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides27:checked ~ .pseudo-slides-ctrl label:nth-child(26) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides27:checked ~ .pseudo-slides-ctrl label:nth-child(26)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides28:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-67.5%, 0, 0);
+  -moz-transform: translate3d(-67.5%, 0, 0);
+  -ms-transform: translate3d(-67.5%, 0, 0);
+  -o-transform: translate3d(-67.5%, 0, 0);
+  transform: translate3d(-67.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides28:checked ~ .pseudo-slides-progress {
+  width: 70%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides28:checked ~ .pseudo-slides-ctrl label:nth-child(29) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides28:checked ~ .pseudo-slides-ctrl label:nth-child(29)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides28:checked ~ .pseudo-slides-ctrl label:nth-child(27) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides28:checked ~ .pseudo-slides-ctrl label:nth-child(27)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides29:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-70%, 0, 0);
+  -moz-transform: translate3d(-70%, 0, 0);
+  -ms-transform: translate3d(-70%, 0, 0);
+  -o-transform: translate3d(-70%, 0, 0);
+  transform: translate3d(-70%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides29:checked ~ .pseudo-slides-progress {
+  width: 72.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides29:checked ~ .pseudo-slides-ctrl label:nth-child(30) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides29:checked ~ .pseudo-slides-ctrl label:nth-child(30)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides29:checked ~ .pseudo-slides-ctrl label:nth-child(28) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides29:checked ~ .pseudo-slides-ctrl label:nth-child(28)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides30:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-72.5%, 0, 0);
+  -moz-transform: translate3d(-72.5%, 0, 0);
+  -ms-transform: translate3d(-72.5%, 0, 0);
+  -o-transform: translate3d(-72.5%, 0, 0);
+  transform: translate3d(-72.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides30:checked ~ .pseudo-slides-progress {
+  width: 75%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides30:checked ~ .pseudo-slides-ctrl label:nth-child(31) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides30:checked ~ .pseudo-slides-ctrl label:nth-child(31)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides30:checked ~ .pseudo-slides-ctrl label:nth-child(29) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides30:checked ~ .pseudo-slides-ctrl label:nth-child(29)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides31:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-75%, 0, 0);
+  -moz-transform: translate3d(-75%, 0, 0);
+  -ms-transform: translate3d(-75%, 0, 0);
+  -o-transform: translate3d(-75%, 0, 0);
+  transform: translate3d(-75%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides31:checked ~ .pseudo-slides-progress {
+  width: 77.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides31:checked ~ .pseudo-slides-ctrl label:nth-child(32) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides31:checked ~ .pseudo-slides-ctrl label:nth-child(32)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides31:checked ~ .pseudo-slides-ctrl label:nth-child(30) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides31:checked ~ .pseudo-slides-ctrl label:nth-child(30)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides32:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-77.5%, 0, 0);
+  -moz-transform: translate3d(-77.5%, 0, 0);
+  -ms-transform: translate3d(-77.5%, 0, 0);
+  -o-transform: translate3d(-77.5%, 0, 0);
+  transform: translate3d(-77.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides32:checked ~ .pseudo-slides-progress {
+  width: 80%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides32:checked ~ .pseudo-slides-ctrl label:nth-child(33) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides32:checked ~ .pseudo-slides-ctrl label:nth-child(33)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides32:checked ~ .pseudo-slides-ctrl label:nth-child(31) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides32:checked ~ .pseudo-slides-ctrl label:nth-child(31)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides33:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-80%, 0, 0);
+  -moz-transform: translate3d(-80%, 0, 0);
+  -ms-transform: translate3d(-80%, 0, 0);
+  -o-transform: translate3d(-80%, 0, 0);
+  transform: translate3d(-80%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides33:checked ~ .pseudo-slides-progress {
+  width: 82.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides33:checked ~ .pseudo-slides-ctrl label:nth-child(34) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides33:checked ~ .pseudo-slides-ctrl label:nth-child(34)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides33:checked ~ .pseudo-slides-ctrl label:nth-child(32) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides33:checked ~ .pseudo-slides-ctrl label:nth-child(32)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides34:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-82.5%, 0, 0);
+  -moz-transform: translate3d(-82.5%, 0, 0);
+  -ms-transform: translate3d(-82.5%, 0, 0);
+  -o-transform: translate3d(-82.5%, 0, 0);
+  transform: translate3d(-82.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides34:checked ~ .pseudo-slides-progress {
+  width: 85%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides34:checked ~ .pseudo-slides-ctrl label:nth-child(35) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides34:checked ~ .pseudo-slides-ctrl label:nth-child(35)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides34:checked ~ .pseudo-slides-ctrl label:nth-child(33) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides34:checked ~ .pseudo-slides-ctrl label:nth-child(33)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides35:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-85%, 0, 0);
+  -moz-transform: translate3d(-85%, 0, 0);
+  -ms-transform: translate3d(-85%, 0, 0);
+  -o-transform: translate3d(-85%, 0, 0);
+  transform: translate3d(-85%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides35:checked ~ .pseudo-slides-progress {
+  width: 87.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides35:checked ~ .pseudo-slides-ctrl label:nth-child(36) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides35:checked ~ .pseudo-slides-ctrl label:nth-child(36)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides35:checked ~ .pseudo-slides-ctrl label:nth-child(34) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides35:checked ~ .pseudo-slides-ctrl label:nth-child(34)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides36:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-87.5%, 0, 0);
+  -moz-transform: translate3d(-87.5%, 0, 0);
+  -ms-transform: translate3d(-87.5%, 0, 0);
+  -o-transform: translate3d(-87.5%, 0, 0);
+  transform: translate3d(-87.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides36:checked ~ .pseudo-slides-progress {
+  width: 90%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides36:checked ~ .pseudo-slides-ctrl label:nth-child(37) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides36:checked ~ .pseudo-slides-ctrl label:nth-child(37)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides36:checked ~ .pseudo-slides-ctrl label:nth-child(35) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides36:checked ~ .pseudo-slides-ctrl label:nth-child(35)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides37:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-90%, 0, 0);
+  -moz-transform: translate3d(-90%, 0, 0);
+  -ms-transform: translate3d(-90%, 0, 0);
+  -o-transform: translate3d(-90%, 0, 0);
+  transform: translate3d(-90%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides37:checked ~ .pseudo-slides-progress {
+  width: 92.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides37:checked ~ .pseudo-slides-ctrl label:nth-child(38) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides37:checked ~ .pseudo-slides-ctrl label:nth-child(38)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides37:checked ~ .pseudo-slides-ctrl label:nth-child(36) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides37:checked ~ .pseudo-slides-ctrl label:nth-child(36)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides38:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-92.5%, 0, 0);
+  -moz-transform: translate3d(-92.5%, 0, 0);
+  -ms-transform: translate3d(-92.5%, 0, 0);
+  -o-transform: translate3d(-92.5%, 0, 0);
+  transform: translate3d(-92.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides38:checked ~ .pseudo-slides-progress {
+  width: 95%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides38:checked ~ .pseudo-slides-ctrl label:nth-child(39) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides38:checked ~ .pseudo-slides-ctrl label:nth-child(39)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides38:checked ~ .pseudo-slides-ctrl label:nth-child(37) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides38:checked ~ .pseudo-slides-ctrl label:nth-child(37)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides39:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-95%, 0, 0);
+  -moz-transform: translate3d(-95%, 0, 0);
+  -ms-transform: translate3d(-95%, 0, 0);
+  -o-transform: translate3d(-95%, 0, 0);
+  transform: translate3d(-95%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides39:checked ~ .pseudo-slides-progress {
+  width: 97.5%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides39:checked ~ .pseudo-slides-ctrl label:nth-child(40) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides39:checked ~ .pseudo-slides-ctrl label:nth-child(40)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides39:checked ~ .pseudo-slides-ctrl label:nth-child(38) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides39:checked ~ .pseudo-slides-ctrl label:nth-child(38)::after {
+  right: auto;
+  left: 1.5rem;
+}
+/* line 249, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides40:checked ~ .pseudo-slides-container {
+  -webkit-transform: translate3d(-97.5%, 0, 0);
+  -moz-transform: translate3d(-97.5%, 0, 0);
+  -ms-transform: translate3d(-97.5%, 0, 0);
+  -o-transform: translate3d(-97.5%, 0, 0);
+  transform: translate3d(-97.5%, 0, 0);
+}
+/* line 252, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides40:checked ~ .pseudo-slides-progress {
+  width: 100%;
+}
+/* line 257, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides40:checked ~ .pseudo-slides-ctrl label:nth-child(41) {
+  left: auto;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+/* line 263, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides40:checked ~ .pseudo-slides-ctrl label:nth-child(41)::after {
+  content: "\21E8";
+}
+/* line 267, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides40:checked ~ .pseudo-slides-ctrl label:nth-child(39) {
+  display: block;
+  z-index: 1;
+}
+/* line 271, ../../../static/css/main/styles.scss */
+.pseudo-slides #pseudo-slides40:checked ~ .pseudo-slides-ctrl label:nth-child(39)::after {
+  right: auto;
+  left: 1.5rem;
+}
